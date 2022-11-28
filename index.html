@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-site</title>
+    <link rel="stylesheet" href="./style/choices.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="../img/logo.svg">
+
+</head>
+
+<body>
+    <div class="page">
+
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#" class="header__link header__link_active"
+                                    onclick="addActiveClass(this)">Бизнес</a></li>
+                            <li><a href="#" class="header__link" onclick="addActiveClass(this)">О нас</a></li>
+                            <li><a href="#" class="header__link" onclick="addActiveClass(this)">Цены</a></li>
+                            <li><a href="#ordering" class="header__link" onclick="addActiveClass(this)">Оформить
+                                    заказ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="content-with-images">
+            <div class="container">
+                <div class="content-with-images__body">
+                    <div class="content-with-images__heading"><span class="accent">Lorem ipsum </span> dolor sit
+                        ametconsectetur
+                        <span class="accent"> adipiscing</span></div>
+                    <div class="content-with-images__list">
+                        <div class="content-with-images__heading-list">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus!</div>
+                        <ul class="dashed">
+                            <li>Totam rem aperiam eaque ipsa</li>
+                            <li>Sit voluptatem accusantium doloremque laudantium</li>
+                            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-with-images__buttons">
+                        <button class="button-blue">заказать</button>
+                        <button class="button-light">подробнее</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="ordering" id="ordering">
+            <div class="container">
+                <div class="ordering__body">
+                    <div class="title">
+                        <div class="ordering__heading heading-section">Оформление <span class="accent">заказа</span>
+                        </div>
+                        <div class="ordering__subheading subheading-section">Перед заполнением формы ознакомьтесь с
+                            нашей схемой работы!</div>
+                    </div>
+                    <div class="ordering__subsequence">
+
+                        <div class="ordering__item">
+                            <div class="ordering__substrate">
+                                <img src="./img/icons/icons_order/search.svg" alt="search">
+                            </div>
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+
+
+
+                        <div class="ordering__item">
+                            <div class="ordering__substrate">
+                                <img src="./img/icons/icons_order/percent.svg" alt="percent">
+                            </div>
+                            <span>Сonsecteturadipiscing elit</span>
+                        </div>
+
+                        <div class="ordering__item">
+                            <div class="ordering__substrate">
+                                <img src="./img/icons/icons_order/docs.svg" alt="docs">
+                            </div>
+                            <span>Sed do eiusmod tempor</span>
+                        </div>
+
+                        <div class="ordering__item">
+                            <div class="ordering__substrate">
+                                <img src="./img/icons/icons_order/message.svg" alt="message">
+                            </div>
+                            <span>Esse cillum dolore eu fugiat</span>
+                        </div>
+
+                        <div class="ordering__item">
+                            <div class="ordering__substrate">
+                                <img src="./img/icons/icons_order/cash.svg" alt="cash">
+                            </div>
+                            <span>Excepteur sint occaecat cupidatat non proident</span>
+                        </div>
+                        <div class="ordering__elipse-line">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+
+                    </div>
+
+                    <form action="/" class="ordering__form">
+                        <select id="system-type" name="systemType">
+
+                            <option selected disabled hidden>Выберите тип системы</option>
+                            <option value="1">Sed ut perspiciatis</option>
+                            <option value="2">Nemo enim ipsam</option>
+                            <option value="3">Et harum quidem</option>
+                            <option value="4">Temporibus autem</option>
+                            <option value="5">Itaque earum rerum</option>
+                            <option value="6">Sed ut perspiciatis</option>
+                            <option value="7">Sed ut perspiciatis</option>
+
+
+                        </select>
+                        <input id="email" name="email" type="email" placeholder="Ваш e-mail">
+                        <input id="name" name="name" type="text" placeholder="Ваше имя">
+                        <div class="ordering__range">
+                            <div class="signature">
+                                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span class="value-range"><span id="rangeValue">75</span>%</span>
+
+                            </div>
+                            <input id="range" type="range" min="0" max="100" value="75" name="range" step="5"
+                                onchange="document.getElementById('rangeValue').innerHTML = this.value;" />
+                        </div>
+
+                        <button class="ordering__button button-light">
+                            <input id="file" name="file" type="file">
+                            <img src="./img/icons/pin_docs.svg" alt="docs">
+                            Прикрепить файл
+                        </button>
+                        <div class="ordering__send">
+                            <input type="submit" class="button-blue" value="Отправить">
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <span class="footer__copyright">
+                        2018<span> &laquo;LoremIpsum.net&raquo; </span>Все права защищены.
+                    </span>
+                    <hr />
+                    <div class="footer__payment-list list">
+                        <div class="footer__payment-item item">
+                            <img src="./img/icons/icons_footer/qiwi.svg" alt="Qiwi wallet"> <span>Qiwi wallet</span>
+                        </div>
+                        <div class="footer__payment-item item">
+                            <img src="./img/icons/icons_footer/yandex.svg" alt="Yandex Money"> <span>Yandex Money</span>
+                        </div>
+                        <div class="footer__payment-item item">
+                            <img src="./img/icons/icons_footer/web.svg" alt="Web Money"> <span>Web Money</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="footer__contacts-list list">
+                        <a href="mailto:info@ipsum228.com" class="footer__contacts-item item">
+                            <img src="./img/icons/icons_footer/email.svg" alt="email"> <span>info@ipsum228.com</span>
+                        </a>
+                        <a href="" class="footer__contacts-item item">
+                            <img src="./img/icons/icons_footer/vk.svg" alt="Мы вконтакте"> <span>Мы вконтакте</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <!-- библиотека для кастомизации селектов -->
+    <script src="./js/choices.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
